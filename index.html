@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stye.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- <p id="dateDisplay"></p>
+
+    <input type="number" placeholder="USD" name="USD" id="usd">
+
+    <button id="exchange" onclick="converter()">Exchange</button>
+
+    <p id="showAmount"></p> -->
+
+    
+    <div class="converter-container">
+        <div class="converter-wrapper">
+            <h1>Currency Converter</h1>
+
+            <select id="firstCurrency">
+                <option value="USD">US Dollar</option>
+                <option value="GBP">Pound</option>
+                <option value="EUR">Euro</option>
+                <option value="AED">UAE Dirham</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="NGN">Nigerian Naira</option>
+            </select>
+
+
+            <p>TO</p>
+            <select id="secondCurrency">
+                <option value="USD">US Dollar</option>
+                <option value="GBP">Pound</option>
+                <option value="EUR">Euro</option>
+                <option value="AED">UAE Dirham</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="NGN">Nigerian Naira</option>
+            </select>
+        
+            <label for="amount">Enter Amount</label>
+            <input type="number" id="amount">
+        
+            <button onclick="convertCurrency()">Convert</button>
+        
+            <p id="result">Your result will appear here</p>
+        </div>
+    </div>
+</body>
+</html>
