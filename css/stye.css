@@ -71,13 +71,14 @@ p{
 @media (max-width: 768px) {
     .converter-container{
         background-color: rgba(4, 4, 80, 0.815);
+        display: flex;
+        justify-content: center;
     }
 
     .converter-wrapper{
         width: 70%;
         display: flex;
         flex-direction: column;
-        border: none;
     }
 
     button{
