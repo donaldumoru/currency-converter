@@ -52,6 +52,7 @@ function convertCurrency() {
     let secondCurrency = document.getElementById("secondCurrency").value;
     let amount = parseFloat(document.getElementById("amount").value);
     let displayResult = document.getElementById("result")
+    let date = document.getElementById("date");
 
     // Fetch exchange rates from API based on the first currency
     fetch(`https://api.exchangerate-api.com/v4/latest/${firstCurrency}`)
@@ -66,6 +67,7 @@ function convertCurrency() {
 
             console.log(data);
 
+            let displayDate = data.date;
 
             // Get exchange rate for the second currency
             let exchangeRate = data.rates[secondCurrency];
@@ -83,6 +85,8 @@ function convertCurrency() {
             else {
                 displayResult.textContent = `${amount} ${firstCurrency} is approximately ${convertedAmount.toFixed(2)} ${secondCurrency}`;
             }
+
+            date.textContent = `${firstCurrency} to ${secondCurrency} conversion rate - Last updated ${displayDate}`;
 
         })
         .catch(error => {
