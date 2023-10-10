@@ -86,6 +86,10 @@ p{
         color: white;
         font-weight: bold;
     }
+    
+    input, select, textarea {
+          font-size: 16px !important;
+     }
 
     p{
         color: rgb(34, 32, 32);
